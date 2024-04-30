@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Emergency Meeting Caller</title>
+  <style>
+    body {
+      background-color: purple;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    button {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+  <script src="SendMessage.js"></script>
+</head>
+<body>
+  <button onclick="flask()">Emergency Meeting Button</button>
+</body>
+</html>
