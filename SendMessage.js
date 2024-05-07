@@ -1,1 +1,15 @@
-(function(_0x2b1af7,_0xa685d){var _0x45618b=_0x3895,_0x1cdf94=_0x2b1af7();while(!![]){try{var _0x4dd811=-parseInt(_0x45618b(0x1be))/0x1+-parseInt(_0x45618b(0x1b8))/0x2*(parseInt(_0x45618b(0x1b7))/0x3)+parseInt(_0x45618b(0x1b4))/0x4*(parseInt(_0x45618b(0x1b1))/0x5)+parseInt(_0x45618b(0x1b3))/0x6+parseInt(_0x45618b(0x1b6))/0x7*(-parseInt(_0x45618b(0x1bf))/0x8)+-parseInt(_0x45618b(0x1c6))/0x9*(-parseInt(_0x45618b(0x1b5))/0xa)+parseInt(_0x45618b(0x1bd))/0xb;if(_0x4dd811===_0xa685d)break;else _0x1cdf94['push'](_0x1cdf94['shift']());}catch(_0x2e8885){_0x1cdf94['push'](_0x1cdf94['shift']());}}}(_0x5d88,0xd7a83));function flask(){var _0x49f147=_0x3895,_0x1d4a00=prompt(_0x49f147(0x1bc)),_0x3fdc54=prompt('Provide\x20your\x20Discord\x20username');if(_0x3fdc54===null)alert(_0x49f147(0x1c4));else{var _0x529f17=_0x3fdc54['replace'](/([*_~`])/g,'\x5c$1'),_0x5c7826=_0x49f147(0x1ba)+_0x529f17+'**'+'*'+_0x49f147(0x1c1)+'*'+'**'+_0x1d4a00+'**',_0x465209=new XMLHttpRequest();_0x465209[_0x49f147(0x1b2)](_0x49f147(0x1bb),_0x49f147(0x1c0)),_0x465209[_0x49f147(0x1b9)](_0x49f147(0x1c5),_0x49f147(0x1c2));var _0x4a4069=JSON[_0x49f147(0x1c3)]({'content':_0x5c7826});_0x465209['send'](_0x4a4069);}}function _0x3895(_0x5ebbb8,_0x3a35d9){var _0x5d88fd=_0x5d88();return _0x3895=function(_0x389561,_0x4f98a8){_0x389561=_0x389561-0x1b1;var _0xe7e0d2=_0x5d88fd[_0x389561];return _0xe7e0d2;},_0x3895(_0x5ebbb8,_0x3a35d9);}function _0x5d88(){var _0x4cb020=['1795845CkYmTJ','open','1031646gunSKH','4tUQJdo','10bXucan','371DQOIem','82569HyGDml','62xxnpxA','setRequestHeader','@everyone\x20An\x20EMERGENCY\x20Meeting\x20has\x20been\x20called\x20by\x20**','POST','Enter\x20your\x20message','30190006HKZdQN','206266RSbYQS','248608gqvEmC','https://discord.com/api/webhooks/1228358257458806804/X32yc9_YuQ9rOCGd74TtX0H2st15ogesi5eMH10Ptswe2nkLoK6Cy4qWeNRw1GTZBZtp','With\x20the\x20reason:\x20','application/json','stringify','Operation\x20cancelled','Content-Type','2827638MCLtGb'];_0x5d88=function(){return _0x4cb020;};return _0x5d88();}
+function flask() {
+  var second = prompt("Enter your message");
+  var _0x588b7f = prompt("Provide your Discord username");
+  if (_0x588b7f === null) {
+    alert("Operation cancelled");
+  } else {
+    var _0x1b001e = _0x588b7f.replace(/([*_~`])/g, "\\$1");
+    var _0x5d722a = "@everyone An EMERGENCY Meeting has been called by "+"**" + _0x1b001e + "**" + " *" + "With the reason: " + "*" + " **" + second + "**";
+    var _0x3a1362 = new XMLHttpRequest;
+    _0x3a1362.open("POST", "https://discord.com/api/webhooks/1228358257458806804/X32yc9_YuQ9rOCGd74TtX0H2st15ogesi5eMH10Ptswe2nkLoK6Cy4qWeNRw1GTZBZtp");
+    _0x3a1362.setRequestHeader("Content-Type", "application/json");
+    var _0x109867 = JSON.stringify({content: _0x5d722a});
+    _0x3a1362.send(_0x109867);
+  }
+}
